@@ -3,7 +3,7 @@ import { FontFamily, FontSize, Spacing } from "../obj.constants";
 
 export const H1 = styled.h1`
   font-size: ${FontSize.XLarge};
-  font-family: ${FontFamily.Secondary};
+  font-family: ${FontFamily.Primary};
   margin-bottom: ${Spacing.Medium};
 `;
 
