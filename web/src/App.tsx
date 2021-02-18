@@ -1,11 +1,11 @@
-import React from "react";
-import { H1 } from "../src/components/atm.typography";
-import GlobalStyle from "./global.style";
+import React from 'react';
+import { H1 } from './components/atm.typography';
+import GlobalStyle from './global.style';
 
 function App() {
   return (
     <>
-    <GlobalStyle />
+      <GlobalStyle />
       <H1>HELLOOOO</H1>
     </>
   );
