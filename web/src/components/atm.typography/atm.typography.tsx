@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { FontFamily, FontSize, Spacing } from "../obj.constants";
+import styled from 'styled-components';
+import { FontFamily, FontSize, Spacing } from '../obj.constants';
 
 export const H1 = styled.h1`
   font-size: ${FontSize.XLarge};
