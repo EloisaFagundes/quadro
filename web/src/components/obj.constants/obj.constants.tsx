@@ -1,6 +1,6 @@
 export enum BrandColors {
   SoftBlue = '#3251A6',
-  GrayXLight = '#F5F5F5F',
+  GrayXLight = '#F5F5F5',
   Orange = '#EA6712',
   Marine = '#2E3F66',
   Red = '#FF0000',
