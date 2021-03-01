@@ -40,7 +40,16 @@
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
-    "import / no-extraneous-dependencies": 0
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/no-extraneous-dependencies" : [ 
+      "error" ,
+        { 
+          "devDependencies" : true ,
+          "optionalDependencies" : false ,  
+          "peerDependencies" : true 
+        } 
+    ],
+    "react/require-default-props": "off"
   },
   "settings": {
     "import/resolver": {
