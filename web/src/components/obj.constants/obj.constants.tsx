@@ -73,4 +73,5 @@ export const Shadow = {
 
 export const BorderRadius = {
   Medium: '30px',
+  Large: '50%',
 };

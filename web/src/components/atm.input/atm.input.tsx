@@ -44,7 +44,7 @@ export const InputLabel: React.FC<Props> = ({
         placeholder={placeholder}
         onChange={(e) => handleTextChange(e.target.value)}
       />
-      <Label htmlFor={name} icon={icon} className={isActive ? 'Active' : ''}>
+      <Label htmlFor={name} icon={icon} isActive={isActive}>
         {icon || (icon && name) || name}
       </Label>
     </Container>

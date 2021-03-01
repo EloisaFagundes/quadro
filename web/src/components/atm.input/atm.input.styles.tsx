@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ILabel } from './atm.input';
 import {
@@ -9,20 +9,22 @@ import {
   FontSize,
 } from '../obj.constants';
 
+interface LabelProps {
+  isActive?: boolean;
+}
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-
-  .Active {
-    transform: scale(0.6) translateY(-30px);
-    color: ${Color.GrayLight};
-  }
 `;
 
-export const Label = styled.label<ILabel>`
+export const Label = styled.label<ILabel & LabelProps>`
   display: flex;
   position: absolute;
+
+  /* width: 100%; */
+
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Medium};
   padding-left: ${Spacing.XLarge};
@@ -36,6 +38,19 @@ export const Label = styled.label<ILabel>`
   .show {
     top: -10px;
   }
+
+  ${(props) =>
+    props.icon &&
+    css`
+      left: 95%;
+    `}
+
+  ${(props) =>
+    props.isActive &&
+    css`
+      transform: scale(0.6) translateY(-30px);
+      color: ${Color.GrayLight};
+    `}
 `;
 
 export const Input = styled.input<ILabel>`
@@ -55,17 +70,6 @@ export const Input = styled.input<ILabel>`
     &:focus {
       overflow: hidden;
     }
-  }
-
-  ~ svg {
-    fill: ${Color.GrayDark};
-    position: relative;
-    left: 12px;
-    top: 16px;
-    width: 24px;
-    height: 24px;
-    transition: 180ms ease-in-out;
-    left: -39px;
   }
 
   &:focus {

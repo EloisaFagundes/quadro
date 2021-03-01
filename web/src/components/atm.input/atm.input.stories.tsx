@@ -1,7 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
+import React, { useState } from 'react';
 import { InputLabel } from './atm.input';
 import { RiIcon } from '../atm.icon';
 import { Separator } from '../atm.separator';
