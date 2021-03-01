@@ -95,10 +95,9 @@ export const ButtonCSS = css<ButtonStyleProps>`
   font-weight: bold;
   font-family: ${FontFamily.Primary};
   border-radius: ${BorderRadius.Medium};
-  border: ${(props) =>
-    props.outlined
-      ? `2px solid ${buttonColors(props.kind!, props.outlined!).border}`
-      : 'none'};
+  ${(props) =>
+    props.outlined &&
+    `border: 2px solid ${buttonColors(props.kind!, props.outlined!).border}`};
 
   cursor: pointer;
 
