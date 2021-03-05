@@ -1,1 +1,1 @@
-export * from './atm.icon';
+export * from './atm.icon.component';

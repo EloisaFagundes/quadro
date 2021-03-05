@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 
 import React, { useState } from 'react';
-import { Input } from './atm.input';
+import { Input } from './atm.input.component';
 import { RiIcon } from '../atm.icon';
 import { Separator } from '../atm.separator';
 

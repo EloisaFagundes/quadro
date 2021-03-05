@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { ILabel } from './atm.input';
+import { ILabel } from './atm.input.component';
 import {
   Spacing,
   Color,

@@ -1,1 +1,1 @@
-export * from './atm.input';
+export * from './atm.input.component';

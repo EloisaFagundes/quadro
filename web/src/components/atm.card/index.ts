@@ -1,1 +1,1 @@
-export * from './atm.card';
+export * from './atm.card.component';
