@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Color } from '../obj.constants';
+import { Color, Spacing, BorderRadius } from '../obj.constants';
 
 import { IcSearch } from './icons';
 
@@ -13,9 +13,10 @@ export const IconBorderWrapper = styled.div<IconProps>`
       ? css`
           display: flex;
           align-items: center;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
+          justify-content: center;
+          width: ${Spacing.XXLarge};
+          height: ${Spacing.XXLarge};
+          border-radius: ${BorderRadius.Large};
           background-color: ${Color.CallToAction};
           fill: ${Color.White};
         `
@@ -33,9 +34,7 @@ const iconCss = css<IconProps>`
 export const ICSearchStyled = styled(IcSearch)`
   ${iconCss}
 
-  display: flex;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  padding: 5px;
+  width: ${Spacing.XLarge};
+  height: ${Spacing.XLarge};
+  padding: ${Spacing.Micro};
 `;

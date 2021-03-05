@@ -6,6 +6,7 @@ import {
   BorderRadius,
   Shadow,
   FontSize,
+  Spacing,
 } from '../obj.constants';
 
 const buttonColors = (
@@ -132,10 +133,10 @@ export const ButtonStyled = styled.button`
 
 export const LinkButton = styled.a`
   ${ButtonCSS}
+  font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Small};
   display: inline-block;
   color: ${Color.Primary};
-  padding: 0;
   text-decoration: none;
 `;
 
@@ -148,5 +149,5 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   justify-content: center;
   align-self: center;
-  padding: 10px;
+  padding: ${Spacing.Medium};
 `;

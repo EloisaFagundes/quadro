@@ -1,10 +1,9 @@
 import styled from 'styled-components';
+import { Color, BorderRadius, Shadow } from '../obj.constants';
 
 export const CardStyled = styled.div`
-  height: 100%;
-  background: white;
-  border-radius: 50px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.07);
-  padding: 1.5rem 2rem;
+  background: ${Color.White};
+  border-radius: ${BorderRadius.Medium};
+  box-shadow: ${Shadow.Small};
   text-align: center;
 `;
