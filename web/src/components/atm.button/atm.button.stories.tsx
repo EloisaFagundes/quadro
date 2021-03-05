@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
-import { Button, ButtonKind } from './index';
+import { Button, ButtonKind, LinkUnderline } from './index';
 
 enum buttonKind {
   primary = 'primary',
@@ -35,4 +35,11 @@ storiesOf('Button', module)
     >
       Disabled
     </Button>
+  ))
+  .add('Link', () => (
+    <LinkUnderline
+      kind={select<ButtonKind>('Kind', buttonKind, buttonKind.primary)}
+    >
+      Link
+    </LinkUnderline>
   ));
