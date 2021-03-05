@@ -23,15 +23,14 @@ export const Label = styled.label<ILabel & LabelProps>`
   display: flex;
   position: absolute;
 
-  /* width: 100%; */
-
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Medium};
+
   padding-left: ${Spacing.XLarge};
   text-transform: capitalize;
   transition: all 0.1s linear;
-  margin-top: 17px;
-  color: ${Color.GrayXDark};
+  margin-top: 25px;
+  color: ${Color.GrayLight};
   transition: all 0.1s linear;
   pointer-events: none;
 
@@ -42,7 +41,8 @@ export const Label = styled.label<ILabel & LabelProps>`
   ${(props) =>
     props.icon &&
     css`
-      left: 95%;
+      left: 87%;
+      bottom: 28%;
     `}
 
   ${(props) =>
@@ -53,20 +53,20 @@ export const Label = styled.label<ILabel & LabelProps>`
     `}
 `;
 
-export const Input = styled.input<ILabel>`
+export const InputStyled = styled.input<ILabel>`
   position: relative;
   border: transparent;
   background-color: ${Color.Secondary};
   border-radius: ${BorderRadius.Medium};
-  padding: ${Spacing.XLarge};
+  padding: ${Spacing.XLarge} 0;
   padding-left: ${(props) => (props.icon ? '40px' : '16px')};
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Medium};
 
   &::placeholder {
-    color: ${Color.GrayDark};
-    z-index: 3;
-    padding-left: 50px;
+    color: ${Color.GrayLight};
+    /* z-index: 3; */
+    padding-left: 14px;
     &:focus {
       overflow: hidden;
     }
