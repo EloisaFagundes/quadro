@@ -38,11 +38,4 @@ export const ICSearchStyled = styled(IcSearch)`
   width: 28px;
   height: 28px;
   padding: 5px;
-
-  /* ${(props) =>
-    props.iconRounded &&
-    css`
-      display: flex;
-      left: 95%;
-    `}; */
 `;

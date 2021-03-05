@@ -95,6 +95,7 @@ export const ButtonCSS = css<ButtonStyleProps>`
   font-weight: bold;
   font-family: ${FontFamily.Primary};
   border-radius: ${BorderRadius.Medium};
+  border: none;
   ${(props) =>
     props.outlined &&
     `border: 2px solid ${buttonColors(props.kind!, props.outlined!).border}`};
@@ -140,6 +141,7 @@ export const LinkButton = styled.a`
 
 export const LinkUnderline = styled(LinkButton)`
   text-decoration: underline;
+  height: 0;
 `;
 
 export const ButtonWrapper = styled.div`

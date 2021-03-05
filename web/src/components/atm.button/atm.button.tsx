@@ -5,16 +5,21 @@ export interface ButtonProps {
   kind?: ButtonKind;
   outlined?: boolean;
   onClick?: () => void;
+  onSubmit?: () => void;
   disabled?: boolean;
   children?: string;
   href?: string;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   disabled,
-  outlined = false,
+  outlined,
   kind,
+  onSubmit,
+  onClick,
+  type,
   ...props
 }) => {
   return (
@@ -23,6 +28,9 @@ export const Button: React.FC<ButtonProps> = ({
         kind={kind}
         outlined={outlined}
         disabled={disabled}
+        onSubmit={onSubmit}
+        onClick={onClick}
+        type={type}
         {...props}
       >
         {children}
