@@ -1,1 +1,1 @@
-export * from './obj.constants';
+export * from './obj.constants.component';

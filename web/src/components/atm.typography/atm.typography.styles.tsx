@@ -8,13 +8,13 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h2`
-  font-size: 36px;
+  font-size: ${FontSize.Large};
   font-family: ${FontFamily.Primary};
   margin-bottom: ${Spacing.Medium};
 `;
 
 export const H3 = styled.h3`
-  font-size: 28px;
+  font-size: ${FontSize.Medium};
   font-family: ${FontFamily.Primary};
   margin-bottom: ${Spacing.Medium};
 `;

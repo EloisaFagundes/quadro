@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components';
 
-import { ILabel } from './atm.input';
+import { ILabel } from './atm.input.component';
 import {
   Spacing,
   Color,
   BorderRadius,
   FontFamily,
   FontSize,
+  Shadow,
 } from '../obj.constants';
 
 interface LabelProps {
@@ -65,8 +66,7 @@ export const InputStyled = styled.input<ILabel>`
 
   &::placeholder {
     color: ${Color.GrayLight};
-    /* z-index: 3; */
-    padding-left: 14px;
+    padding-left: ${Spacing.XLarge};
     &:focus {
       overflow: hidden;
     }
@@ -75,7 +75,7 @@ export const InputStyled = styled.input<ILabel>`
   &:focus {
     opacity: none;
     border: 2px solid ${Color.CallToAction};
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: ${Shadow.Small};
     padding: ${Spacing.XLarge};
     ~ svg {
       fill: ${Color.Alert};

@@ -24,6 +24,7 @@ export const Input: React.FC<Props> = (props, Error) => {
 
   console.log(value, 'input value');
 
+  // é necessário para verificar se o input está preenchido, para manter a label suspensa.
   function handleTextChange(text: string) {
     if (text !== '') {
       setIsActive(true);
