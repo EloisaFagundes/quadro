@@ -75,3 +75,10 @@ export const BorderRadius = {
   Medium: '30px',
   Large: '50%',
 };
+
+export const Breakpoint = {
+  xs: 0, // em
+  sm: 32, // em
+  md: 48, // em
+  lg: 64, // em
+};
